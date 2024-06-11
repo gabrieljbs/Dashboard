@@ -1,0 +1,29 @@
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+.row {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  margin-bottom: -2rem;
+}
+.header {
+  background-color: #ffcb2b;
+  width: 100%;
+  margin-bottom: 3rem;
+}
+.col-row {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  margin: auto;
+}
+
+h1 {
+  align-self: start;
+  margin: 1rem;
+}
