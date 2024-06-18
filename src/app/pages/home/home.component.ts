@@ -7,6 +7,8 @@ import { LineChardsComponent } from '../../components/line-chards/line-chards.co
 import { MatCardModule } from '@angular/material/card';
 import {MatDividerModule} from '@angular/material/divider';
 import { ColumnHorizontalChartsComponent } from '../../components/column-horizontal-charts/column-horizontal-charts.component';
+import { HorizontalBarComponent } from '../../components/horizontal-bar/horizontal-bar.component';
+import { PieChats2Component } from '../../components/pie-chats-2/pie-chats-2.component';
 @Component({
   selector: 'app-home',
   standalone: true,
@@ -18,7 +20,9 @@ import { ColumnHorizontalChartsComponent } from '../../components/column-horizon
     MatCardModule,
     LineChardsComponent,
     MatDividerModule,
-    ColumnHorizontalChartsComponent
+    ColumnHorizontalChartsComponent,
+    HorizontalBarComponent,
+    PieChats2Component
   ],
   templateUrl: './home.component.html',
   styleUrl: './home.component.scss',

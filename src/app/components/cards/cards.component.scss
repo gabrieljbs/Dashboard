@@ -1,13 +1,9 @@
-mat-card{
-   margin: 10px;
-   border-radius: 12px;
-   box-shadow: 5px 5px 18px 0px;
-   width: 10vw;
-   height: 10vh;
-   background-color: #fff;
+mat-card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 1rem;
+  width: 10vw;
+  height: 10vh;
 }
-mat-card{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
+    

@@ -33,6 +33,15 @@ export class LineChardsComponent implements OnInit{
         }]
       },
       options: {
+        plugins: {
+          legend: {
+            position: 'top',
+          },
+          title: {
+            display: true,
+            text: 'Rotatividade',
+          },
+        },
       }
     });
   }

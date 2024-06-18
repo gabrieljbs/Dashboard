@@ -15,33 +15,28 @@ export class ColumnHorizontalChartsComponent implements OnInit {
       type: 'bar',
       data: {
         labels: [
-          'Janeiro',
-          'Fevereio',
-          'Março',  
-          'Abril',
-          'Maio',
-          'Junho',
-          'Julho',
-          'Agosto',
-          'Setembro',
-          'Outubro',
-          'Novembro',
-          'Dezembro',
+          'Analista',
+          'Auxiliar',
+          'Assistente',
+          'Estagio',
+          'Coodernador',
+          'Supervisor',
         ],
         datasets: [
           {
-            label: 'Contratação',
-            data: [12, 19, 30, 50, 22, 30, 50, 12, 19, 30, 50, 10],
-            borderWidth: 1,
-          },
-          {
-            label: 'Demição',
-            data: [130, 50, 12, 19, 30, 50, 10, 2, 19, 30, 50, 22],
+            label: 'Cargos',
+            data: [12, 19, 30, 45, 22, 30],
             borderWidth: 1,
           },
         ],
       },
       options: {
+        plugins: {
+          title: {
+            display: true,
+            text: 'Nível Hierárquico',
+          },
+        },
         indexAxis: 'y',
         scales: {
           y: {

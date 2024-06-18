@@ -4,6 +4,7 @@ import { RouterOutlet } from '@angular/router';
 import { MatDividerModule } from '@angular/material/divider';
 import { MatIconModule } from '@angular/material/icon';
 import { MatListModule } from '@angular/material/list';
+import {MatButtonModule} from '@angular/material/button';
 @Component({
   selector: 'app-side-navbar',
   standalone: true,
@@ -13,6 +14,8 @@ import { MatListModule } from '@angular/material/list';
     MatDividerModule,
     MatIconModule,
     MatListModule,
+    MatIconModule,
+    MatButtonModule
   ],
   templateUrl: './side-navbar.component.html',
   styleUrl: './side-navbar.component.scss',
@@ -21,15 +24,18 @@ export class SideNavbarComponent {
   pages:any [] = [
     {
       name: 'Dashbord',
-      path:'home'
+      path:'home',
+      icon:'view_quilt'
     },
     {
       name: 'Colaboradores',
-      path:'#'
+      path:'#',
+      icon:'list'
     },
     {
-      name: 'Dashbord',
-      path:'#s'
+      name: 'Relatorio',
+      path:'#',
+      icon:'assignment'
     },
   ];
 }
