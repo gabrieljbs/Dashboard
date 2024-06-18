@@ -1,19 +1,21 @@
 <div class="content">
     <div class="header">
-        <h1 class="anta-regular">Dashboard | Colaboradores</h1>    
+        <h1 class="anta-regular">Dashboard | Colaboradores</h1>
         <div class="row">
             @for (item of items; track $index) {
-                <app-cards [title]="item.title" [label]="item.label"></app-cards>
+            <app-cards [title]="item.title" [label]="item.label"></app-cards>
             }
         </div>
     </div>
-   
+
     <div class="col-row">
         <app-line-chards></app-line-chards>
         <app-column-chart></app-column-chart>
         <app-pie-chards></app-pie-chards>
     </div>
-    <app-column-horizontal-charts></app-column-horizontal-charts>
+    <div class="col-row">
+        <app-column-horizontal-charts></app-column-horizontal-charts>
+        <app-horizontal-bar></app-horizontal-bar>
+        <app-pie-chats-2></app-pie-chats-2>
+    </div>
 </div>
-
-

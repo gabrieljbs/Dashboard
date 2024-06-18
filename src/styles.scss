@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Anta&display=swap");
 .anta-regular {
-  font-family: "Anta", sans-serif;
+  font-family: "Anta", sans-serif !important; 
   font-weight: 400;
   font-style: normal;
 }
@@ -15,3 +15,5 @@ body {
   display: block;
   margin: 0px;
 }
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

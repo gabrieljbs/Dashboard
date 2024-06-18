@@ -20,6 +20,15 @@ export class PieChardsComponent implements OnInit{
         }]
       },
       options: {
+        plugins: {
+          legend: {
+            position: 'top',
+          },
+          title: {
+            display: true,
+            text: 'Indetificação racial',
+          },
+        },
       }
     });
   }

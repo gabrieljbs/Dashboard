@@ -1,14 +1,29 @@
 <mat-drawer-container class="container">
     <mat-drawer mode="side" opened>
-        <mat-list>
-            <div mat-subheader>Folders</div>
-            @for (page of pages; track page) {
-            <mat-list-item>
-                <mat-icon matListItemIcon>folder</mat-icon>
-                <div matListItemTitle>{{page.name}}</div>
-            </mat-list-item>
-            }
-        </mat-list>
+        <div class="drawer-content">
+            <img src="./../../../assets/logo.jpeg" alt="logo">
+
+            <mat-list>
+                <div mat-subheader>Paginas</div>
+                <mat-divider></mat-divider>
+                @for (page of pages; track page) {
+                <mat-list-item>
+                    <a mat-button target="_blank" routerLink=".">
+                        <mat-icon matListItemIcon>{{page.icon}}</mat-icon>
+                        {{page.name}}
+                    </a>
+                </mat-list-item>
+                <mat-divider></mat-divider>
+                }
+            </mat-list>
+          
+            <div class="logout-button">
+                <button mat-raised-button color="warn">
+                    <mat-icon>power_off</mat-icon>
+                    Sair
+                </button>
+            </div>
+        </div>
     </mat-drawer>
     <mat-drawer-content>
         <router-outlet></router-outlet>

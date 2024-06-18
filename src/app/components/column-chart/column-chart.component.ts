@@ -43,12 +43,22 @@ export class ColumnChartComponent implements OnInit {
         ],
       },
       options: {
+        plugins: {
+          legend: {
+            position: 'top',
+          },
+          title: {
+            display: true,
+            text: 'Admissão x Contratação',
+          },
+        },
         scales: {
           y: {
             beginAtZero: true,
           },
-        },
+        },        
       },
+      
     });
 
   }
